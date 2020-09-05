@@ -14,8 +14,10 @@ class Projects extends Migration
     public function up()
     {
         Schema::create('projects', function (Blueprint $table) {
-            $table->id();
+            $table->mediumIncrements('id');
             $table->string('name');
+            $table->text('description');
+            $table->enum('status', getCommonStatus());
             $table->timestamps();
         });
     }
