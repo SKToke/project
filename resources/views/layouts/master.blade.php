@@ -13,12 +13,12 @@
     <title>@yield('title')</title>
 
     <!-- Main styles for this application-->
-    <link href="{{ asset("assets/font-awesome/all.min.css") }}" rel="stylesheet">
+    {{--    <link href="{{ asset("assets/font-awesome/all.min.css") }}" rel="stylesheet">--}}
     <link href="{{ asset("assets/coreui/coreui.min.css") }}" rel="stylesheet">
     {{--    <link href="{{ asset("css/app.css") }}" rel="stylesheet">--}}
     <link href="{{ asset("assets/pace-progress/pace-progress.css") }}" rel="stylesheet">
-{{--    <link href="{{ asset("assets/sweetalert2/sweetalert2.min.css") }}" rel="stylesheet">--}}
-{{--    <link href="{{ asset("assets/toastr/toastr.min.css") }}" rel="stylesheet">--}}
+    {{--    <link href="{{ asset("assets/sweetalert2/sweetalert2.min.css") }}" rel="stylesheet">--}}
+    {{--    <link href="{{ asset("assets/toastr/toastr.min.css") }}" rel="stylesheet">--}}
     <link href="{{ asset("assets/custom.css") }}" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
     <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
@@ -47,7 +47,7 @@
 {{--<script src="{{ asset("assets/toastr/toastr.min.js") }}"></script>--}}
 {{--<script src="{{ asset("assets/sweetalert2/sweetalert2.min.js") }}"></script>--}}
 <script src="{{ asset("assets/pace-progress/pace-progress.min.js") }}"></script>
-<script src="{{ asset("assets/font-awesome/all.js") }}"></script>
+{{--<script src="{{ asset("assets/font-awesome/all.js") }}"></script>--}}
 <script src="{{ asset("assets/axios.min.js") }}"></script>
 <script src="{{ asset("assets/jquery351.min.js") }}"></script>
 <script src="{{ asset("assets/vue.js") }}"></script>

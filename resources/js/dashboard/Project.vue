@@ -27,7 +27,7 @@
                 <tbody>
                 <tr v-for="(item, index) in projectList" v-if="projectList.length > 0">
                     <td>{{ sl + index }}</td>
-                    <td>{{ item.name }}</td>
+                    <td>{{ item.name |textCapitalize }}</td>
                     <td v-html="item.description"></td>
                     <td class="text-capitalize">
                         <span class="badge badge-success" v-if="item.status == 'active'">{{ item.status }}</span>
@@ -140,7 +140,7 @@
                                 <tr v-if="chunk.name">
                                     <td style="width: 100px;">Name</td>
                                     <td style="width: 5px;">:</td>
-                                    <td>{{ chunk.name }}</td>
+                                    <td>{{ chunk.name |textCapitalize }}</td>
                                 </tr>
                                 <tr v-if="chunk.description">
                                     <td>Description</td>

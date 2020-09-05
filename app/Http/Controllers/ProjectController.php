@@ -69,8 +69,13 @@ class ProjectController extends Controller
     public function deleteProject($id)
     {
         $project = Project::findOrfail($id);
-        $project->delete();
-
+        try {
+            $project->delete();
+        } catch (\Exception $e) {
+            return response()->json([
+                "message" => $project->name . " in used"
+            ], 422);
+        }
         return response()->json([
             "success" => "Project has been successfully Deleted."
         ]);
