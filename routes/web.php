@@ -28,12 +28,14 @@ Route::patch('/project/{id}', 'ProjectController@getProjectById');
 Route::put('/project/{id}', 'ProjectController@updateProject');
 Route::delete('/project/{id}', 'ProjectController@deleteProject');
 
-Route::get('/project-details', 'ProjectController@index')->name('project-details');
-Route::post('/project-details-list', 'ProjectController@getList')->name('projectDetailsList');
-Route::post('/project-details', 'ProjectController@createProject');
-Route::patch('/project-details/{id}', 'ProjectController@getProjectById');
-Route::put('/project-details/{id}', 'ProjectController@updateProject');
-Route::delete('/project-details/{id}', 'ProjectController@deleteProject');
+Route::get('/project-details', 'ProjectDetailsController@index')->name('project-details');
+Route::post('/project-details-list', 'ProjectDetailsController@getList')->name('projectDetailsList');
+Route::post('/project-details', 'ProjectDetailsController@createProjectDetails');
+Route::patch('/project-details/{id}', 'ProjectDetailsController@getProjectDetailsById');
+Route::put('/project-details/{id}', 'ProjectDetailsController@updateProjectDetails');
+Route::delete('/project-details/{id}', 'ProjectDetailsController@deleteProjectDetails');
+
+Route::post('/calculate-project', 'ProjectDetailsController@calculateById')->name('calculateByProject');
 
 
 Route::get('/home', 'HomeController@index')->name('home');

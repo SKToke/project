@@ -15,8 +15,8 @@ class Projects extends Migration
     {
         Schema::create('projects', function (Blueprint $table) {
             $table->mediumIncrements('id');
-            $table->string('name');
-            $table->text('description');
+            $table->string('name')->unique();
+            $table->text('description')->nullable();
             $table->enum('status', getCommonStatus());
             $table->timestamps();
         });

@@ -15,3 +15,4 @@ mix.js('resources/js/app.js', 'public/js').sass('resources/sass/app.scss', 'publ
  */
 mix.js('resources/js/dashboard/dashboard-main.js', 'public/assets/js/dashboard/dashboard-main.js');
 mix.js('resources/js/dashboard/project-main.js', 'public/assets/js/dashboard/project-main.js');
+mix.js('resources/js/dashboard/project-details.js', 'public/assets/js/dashboard/project-details.js');

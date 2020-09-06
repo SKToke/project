@@ -30,14 +30,14 @@ class ProjectController extends Controller
     public function createProject(Request $request)
     {
         $request->validate([
-            "name" => 'required',
+            "name" => 'required|unique:projects,name',
             "description" => 'nullable',
             "status" => 'required|in:active,inactive,blocked'
         ]);
 
         Project::create([
             'name' => $request->post('name'),
-            'description' => $request->post('description'),
+            'description' => $request->post('description') ?? null,
             'status' => $request->post('status'),
         ]);
 
@@ -49,7 +49,7 @@ class ProjectController extends Controller
     public function updateProject(Request $request, $id)
     {
         $request->validate([
-            "name" => 'required',
+            "name" => 'required|unique:projects,name',
             "description" => 'nullable',
             "status" => 'required|in:active,inactive,blocked'
         ]);

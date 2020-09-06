@@ -2075,723 +2075,55 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Dashboard.vue",
   data: function data() {
     return {
       errors: {},
+      outputRes: {},
       projects: [],
       formData: {
-        name: ''
+        projectId: ''
       },
       routes: window.appHelper.routes
     };
   },
   methods: {
-    addNewProject: function addNewProject() {
-      $("#addNewProject").modal({
-        show: true,
-        backdrop: "static"
-      });
-    },
-    submitAddNewProject: function submitAddNewProject() {
-      // toastr.info('Are you the 6 fingered man?')
-      toastr.info('submit', 'Info');
+    onSelectProject: function onSelectProject() {
+      var _this = this;
+
+      _this.errors = {};
+
+      if (!_this.formData.projectId == '') {
+        axios.post(_this.routes.project, _this.formData).then(function (res) {
+          if (res.data) {
+            _this.outputRes = res.data;
+          } else {
+            toastr.error(res.data.message, "Warning");
+          }
+
+          _this.loading = false;
+        })["catch"](function (err) {
+          toastr.error(err.response.data.message, "Error");
+
+          if (err.response && err.response.data.errors) {
+            _this.errors = err.response.data.errors;
+          }
+
+          _this.loading = false;
+        });
+      } else {
+        _this.outputRes = {};
+      }
     },
     getInitialData: function getInitialData() {
-      console.log("aaaaaaaaaaaaaaa");
-
       var _this = this;
 
       _this.errors = {};
       axios.post(_this.routes.initial).then(function (res) {
         if (res.data) {
-          _this.projects = res.data;
+          _this.projects = res.data.projects;
+          _this.formData.projectId = '';
         } else {
           toastr.error(res.data.message, "Warning");
         }
@@ -2809,10 +2141,14 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   created: function created() {
-    var _this = this; // _this.getInitialData();
+    var _this = this;
 
+    _this.getInitialData();
   },
   filters: {
+    roundNumber: function roundNumber(value) {
+      return +value;
+    },
     textCapitalize: function textCapitalize(value) {
       if (!value) return '';
       value = value.toString();
@@ -38406,37 +37742,188 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("div", { staticClass: "row mb-3" }, [
-      _c("div", { staticClass: "col-md-3 offset-md-3" }, [
-        _vm._m(0),
-        _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-sm-6 col-lg-3" }, [
+        _c("div", { staticClass: "card text-white bg-gradient-success" }, [
+          _c("div", { staticClass: "card-body pb-0" }, [
+            _vm.outputRes.gro_fund_transfer
+              ? _c("div", { staticClass: "text-value-lg" }, [
+                  _vm._v(
+                    _vm._s(
+                      _vm._f("roundNumber")(_vm.outputRes.gro_fund_transfer)
+                    ) + "\n                    "
+                  )
+                ])
+              : _c("div", { staticClass: "text-value-lg" }, [_vm._v("0")]),
+            _vm._v(" "),
+            _c("div", [_vm._v("GRO Fund Transfer")]),
+            _vm._v(" "),
+            _c("div", {
+              staticClass: "mt-3 mx-3",
+              staticStyle: { height: "10px" }
+            })
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-sm-12 col-lg-6" }, [
+        _c("div", { staticClass: "card text-white bg-gradient-danger" }, [
+          _c("div", { staticClass: "card-body pb-0 py-1" }, [
+            _c("div", { staticClass: "row no-gutters" }, [
+              _c("div", { staticClass: "col-lg-6 col-md-6 col-sm-12" }, [
+                _c("ul", { staticClass: "list-group list-group-flush" }, [
+                  _c("li", { staticClass: "list-group-item py-1" }, [
+                    _vm._v(
+                      "Number of District covered:\n                                    "
+                    ),
+                    _vm.outputRes.districts
+                      ? _c("span", { staticClass: "font-weight-bold" }, [
+                          _vm._v(
+                            _vm._s(
+                              _vm._f("roundNumber")(_vm.outputRes.districts)
+                            )
+                          )
+                        ])
+                      : _c("span", { staticClass: "font-weight-bold" }, [
+                          _vm._v("0")
+                        ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "list-group-item py-1" }, [
+                    _vm._v(
+                      "Number of Upazila covered:\n                                    "
+                    ),
+                    _vm.outputRes.upazilas
+                      ? _c("span", { staticClass: "font-weight-bold" }, [
+                          _vm._v(
+                            _vm._s(
+                              _vm._f("roundNumber")(_vm.outputRes.upazilas)
+                            )
+                          )
+                        ])
+                      : _c("span", { staticClass: "font-weight-bold" }, [
+                          _vm._v("0")
+                        ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "list-group-item py-1" }, [
+                    _vm._v(
+                      "Number of Union covered:\n                                    "
+                    ),
+                    _vm.outputRes.unions
+                      ? _c("span", { staticClass: "font-weight-bold" }, [
+                          _vm._v(
+                            _vm._s(_vm._f("roundNumber")(_vm.outputRes.unions))
+                          )
+                        ])
+                      : _c("span", { staticClass: "font-weight-bold" }, [
+                          _vm._v("0")
+                        ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-6 col-md-6 col-sm-12" }, [
+                _c("ul", { staticClass: "list-group list-group-flush" }, [
+                  _c("li", { staticClass: "list-group-item py-1" }, [
+                    _vm._v(
+                      "Number of Village covered:\n                                    "
+                    ),
+                    _vm.outputRes.villages
+                      ? _c("span", { staticClass: "font-weight-bold" }, [
+                          _vm._v(
+                            _vm._s(
+                              _vm._f("roundNumber")(_vm.outputRes.villages)
+                            )
+                          )
+                        ])
+                      : _c("span", { staticClass: "font-weight-bold" }, [
+                          _vm._v("0")
+                        ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "list-group-item py-1" }, [
+                    _vm._v(
+                      "Number of Households covered:\n                                    "
+                    ),
+                    _vm.outputRes.households
+                      ? _c("span", { staticClass: "font-weight-bold" }, [
+                          _vm._v(
+                            _vm._s(
+                              _vm._f("roundNumber")(_vm.outputRes.households)
+                            )
+                          )
+                        ])
+                      : _c("span", { staticClass: "font-weight-bold" }, [
+                          _vm._v("0")
+                        ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "list-group-item py-1" }, [
+                    _vm._v(
+                      "Number of Population covered:\n                                    "
+                    ),
+                    _vm.outputRes.populations
+                      ? _c("span", { staticClass: "font-weight-bold" }, [
+                          _vm._v(
+                            _vm._s(
+                              _vm._f("roundNumber")(_vm.outputRes.populations)
+                            )
+                          )
+                        ])
+                      : _c("span", { staticClass: "font-weight-bold" }, [
+                          _vm._v("0")
+                        ])
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticStyle: { height: "3px" } })
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-sm-6 col-lg-3" }, [
         _c(
-          "button",
+          "select",
           {
-            staticClass: "btn btn-brand btn-sm btn-github fa-pull-right mr-2",
-            attrs: { type: "button" },
-            on: {
-              click: function($event) {
-                return _vm.addNewProject()
+            directives: [
+              {
+                name: "model",
+                rawName: "v-model",
+                value: _vm.formData.projectId,
+                expression: "formData.projectId"
               }
+            ],
+            staticClass: "form-control form-control-sm rounded-0",
+            on: {
+              change: [
+                function($event) {
+                  var $$selectedVal = Array.prototype.filter
+                    .call($event.target.options, function(o) {
+                      return o.selected
+                    })
+                    .map(function(o) {
+                      var val = "_value" in o ? o._value : o.value
+                      return val
+                    })
+                  _vm.$set(
+                    _vm.formData,
+                    "projectId",
+                    $event.target.multiple ? $$selectedVal : $$selectedVal[0]
+                  )
+                },
+                function($event) {
+                  return _vm.onSelectProject()
+                }
+              ]
             }
           },
           [
-            _c("i", { staticClass: "fa fa-plus" }),
-            _vm._v(" "),
-            _c("span", [_vm._v("Add Projects")])
-          ]
-        )
-      ]),
-      _vm._v(" "),
-      _vm._m(1),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-md-3" }, [
-        _c(
-          "select",
-          { staticClass: "form-control form-control-sm rounded-0" },
-          [
             _c("option", { attrs: { value: "" } }, [_vm._v("Select One")]),
+            _vm._v(" "),
+            _c("option", { attrs: { value: "all" } }, [_vm._v("All Projects")]),
             _vm._v(" "),
             _vm._l(_vm.projects, function(item) {
               return _c("option", { domProps: { value: item.id } }, [
@@ -38453,180 +37940,145 @@ var render = function() {
       ])
     ]),
     _vm._v(" "),
-    _c("div", { staticClass: "row no-gutters" }),
-    _vm._v(" "),
-    _c(
-      "div",
-      {
-        staticClass: "modal fade",
-        attrs: {
-          id: "addNewProject",
-          tabindex: "-1",
-          role: "dialog",
-          "aria-labelledby": "viewModalTitle",
-          "aria-hidden": "true"
-        }
-      },
-      [
-        _c(
-          "div",
-          {
-            staticClass: "modal-dialog modal-dialog-centered",
-            attrs: { role: "document" }
-          },
-          [
-            _c("div", { staticClass: "modal-content rounded-0" }, [
-              _vm._m(2),
-              _vm._v(" "),
-              _c("div", { staticClass: "modal-body" }, [
-                _c("div", [
-                  _vm._m(3),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "row" }, [
-                    _c("div", { staticClass: "col-md-12" }, [
-                      _c("input", {
-                        directives: [
-                          {
-                            name: "model",
-                            rawName: "v-model",
-                            value: _vm.formData.name,
-                            expression: "formData.name"
-                          }
-                        ],
-                        staticClass: "form-control form-control-sm rounded-0",
-                        attrs: {
-                          name: "name",
-                          type: "text",
-                          placeholder: "Name"
-                        },
-                        domProps: { value: _vm.formData.name },
-                        on: {
-                          input: function($event) {
-                            if ($event.target.composing) {
-                              return
-                            }
-                            _vm.$set(_vm.formData, "name", $event.target.value)
-                          }
-                        }
-                      })
-                    ])
-                  ])
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-sm-6 col-lg-3" }, [
+        _c("div", { staticClass: "card text-white bg-gradient-info" }, [
+          _c("div", { staticClass: "card-body pb-0" }, [
+            _vm.outputRes.savings
+              ? _c("div", { staticClass: "text-value-lg" }, [
+                  _vm._v(_vm._s(_vm._f("roundNumber")(_vm.outputRes.savings)))
                 ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "modal-footer" }, [
-                _c(
-                  "button",
-                  {
-                    staticClass: "btn btn-brand btn-sm rounded-0",
-                    attrs: { type: "button", "data-dismiss": "modal" }
-                  },
-                  [
-                    _vm._v(
-                      "\n                        Close\n                    "
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c("div", { staticClass: "py-1" }, [
-                  _c(
-                    "button",
-                    {
-                      staticClass:
-                        "btn btn-sm btn-outline-primary d-block rounded-0 w-100",
-                      attrs: { type: "button" },
-                      on: {
-                        click: function($event) {
-                          return _vm.submitAddNewProject()
-                        }
-                      }
-                    },
-                    [
-                      _vm._v(
-                        "\n                            Submit\n                        "
-                      )
-                    ]
+              : _c("div", { staticClass: "text-value-lg" }, [_vm._v("0")]),
+            _vm._v(" "),
+            _c("div", [_vm._v("Savings")])
+          ]),
+          _vm._v(" "),
+          _c("div", {
+            staticClass: "chart-wrapper mt-3 mx-3",
+            staticStyle: { height: "10px" }
+          })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-sm-6 col-lg-3" }, [
+        _c("div", { staticClass: "card text-white bg-gradient-warning" }, [
+          _c("div", { staticClass: "card-body pb-0" }, [
+            _vm.outputRes.profit
+              ? _c("div", { staticClass: "text-value-lg" }, [
+                  _vm._v(_vm._s(_vm._f("roundNumber")(_vm.outputRes.profit)))
+                ])
+              : _c("div", { staticClass: "text-value-lg" }, [_vm._v("0")]),
+            _vm._v(" "),
+            _c("div", [_vm._v("Profit")])
+          ]),
+          _vm._v(" "),
+          _c("div", {
+            staticClass: "chart-wrapper mt-3",
+            staticStyle: { height: "10px" }
+          })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-sm-6 col-lg-3" }, [
+        _c("div", { staticClass: "card text-white bg-gradient-success" }, [
+          _c("div", { staticClass: "card-body pb-0" }, [
+            _vm.outputRes.fund_position_automatic
+              ? _c("div", { staticClass: "text-value-lg" }, [
+                  _vm._v(
+                    "\n                        " +
+                      _vm._s(
+                        _vm._f("roundNumber")(
+                          _vm.outputRes.fund_position_automatic
+                        )
+                      ) +
+                      "\n                    "
                   )
                 ])
-              ])
-            ])
-          ]
-        )
-      ]
-    )
+              : _c("div", { staticClass: "text-value-lg" }, [_vm._v("0")]),
+            _vm._v(" "),
+            _c("div", [_vm._v("Fund Position")])
+          ]),
+          _vm._v(" "),
+          _c("div", {
+            staticClass: "chart-wrapper mt-3",
+            staticStyle: { height: "10px" }
+          })
+        ])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c("div", { staticClass: "col-sm-6 col-lg-3" }, [
+        _c("div", { staticClass: "card text-white bg-gradient-warning" }, [
+          _c("div", { staticClass: "card-body pb-0" }, [
+            _vm.outputRes.outstanding_amount
+              ? _c("div", { staticClass: "text-value-lg" }, [
+                  _vm._v(
+                    _vm._s(
+                      _vm._f("roundNumber")(_vm.outputRes.outstanding_amount)
+                    ) + "\n                    "
+                  )
+                ])
+              : _c("div", { staticClass: "text-value-lg" }, [_vm._v("0")]),
+            _vm._v(" "),
+            _c("div", [_vm._v("Investment Outstanding")]),
+            _vm._v(" "),
+            _c("div", {
+              staticClass: "chart-wrapper mt-3 mx-3",
+              staticStyle: { height: "10px" }
+            })
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-sm-6 col-lg-3" }, [
+        _c("div", { staticClass: "card text-white bg-gradient-success" }, [
+          _c("div", { staticClass: "card-body pb-0" }, [
+            _vm.outputRes.amount_in_gro_bank
+              ? _c("div", { staticClass: "text-value-lg" }, [
+                  _vm._v(
+                    _vm._s(
+                      _vm._f("roundNumber")(_vm.outputRes.amount_in_gro_bank)
+                    ) + "\n                    "
+                  )
+                ])
+              : _c("div", { staticClass: "text-value-lg" }, [_vm._v("0")]),
+            _vm._v(" "),
+            _c("div", [_vm._v("Bank Deposit")])
+          ]),
+          _vm._v(" "),
+          _c("div", {
+            staticClass: "chart-wrapper mt-3 mx-3",
+            staticStyle: { height: "10px" }
+          })
+        ])
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-sm-6 col-lg-3" }, [
+        _c("div", { staticClass: "card text-white bg-gradient-info" }, [
+          _c("div", { staticClass: "card-body pb-0" }, [
+            _vm.outputRes.cash_in_hand
+              ? _c("div", { staticClass: "text-value-lg" }, [
+                  _vm._v(
+                    _vm._s(_vm._f("roundNumber")(_vm.outputRes.cash_in_hand)) +
+                      "\n                    "
+                  )
+                ])
+              : _c("div", { staticClass: "text-value-lg" }, [_vm._v("0")]),
+            _vm._v(" "),
+            _c("div", [_vm._v("Cash In Hand")])
+          ]),
+          _vm._v(" "),
+          _c("div", {
+            staticClass: "chart-wrapper mt-3",
+            staticStyle: { height: "10px" }
+          })
+        ])
+      ])
+    ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "button",
-      {
-        staticClass: "btn btn-brand btn-sm btn-flickr fa-pull-right",
-        attrs: { type: "button" }
-      },
-      [
-        _c("i", { staticClass: "fa fa-plus" }),
-        _vm._v(" "),
-        _c("span", [_vm._v("Add New")])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-3" }, [
-      _c(
-        "button",
-        {
-          staticClass: "btn btn-sm btn-outline-info d-block rounded-0 w-100",
-          attrs: { type: "button" }
-        },
-        [_vm._v("\n                Back\n            ")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "modal-header" }, [
-      _c(
-        "h6",
-        {
-          staticClass: "modal-title",
-          attrs: { id: "exampleModalCenterTitle3" }
-        },
-        [_vm._v("Add Project")]
-      ),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "close",
-          attrs: {
-            type: "button",
-            "data-dismiss": "modal",
-            "aria-label": "Close"
-          }
-        },
-        [_c("span", { attrs: { "aria-hidden": "true" } }, [_vm._v("×")])]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("label", { staticClass: "c-label pt-1" }, [
-      _vm._v("Name"),
-      _c("span", { staticClass: "text-danger" }, [_vm._v("*")])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
