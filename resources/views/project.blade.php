@@ -12,9 +12,6 @@
         ]
         ) !!} };
     </script>
-    <link href="{{ asset("assets/font-awesome/all.min.css") }}" rel="stylesheet">
-    <link href="{{ asset("assets/sweetalert2/sweetalert2.min.css") }}" rel="stylesheet">
-    <link href="{{ asset("assets/toastr/toastr.min.css") }}" rel="stylesheet">
 @endpush
 
 @section("content"){{--
@@ -40,7 +37,7 @@
             </div>
         </div>
     </main>--}}
-<main class="main">
+<main class="c-main pt-0">
     <!-- Breadcrumb-->
     <ol class="breadcrumb">
         <li class="breadcrumb-item">
@@ -59,8 +56,5 @@
 @endsection
 
 @push("footer")
-    <script src="{{ asset("assets/font-awesome/all.js") }}"></script>
-    <script src="{{ asset("assets/sweetalert2/sweetalert2.min.js") }}"></script>
-    <script src="{{ asset("assets/toastr/toastr.min.js") }}"></script>
     <script src="{{ asset("assets/js/dashboard/project-main.js") }}"></script>
 @endpush
