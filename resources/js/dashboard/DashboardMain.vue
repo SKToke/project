@@ -1,5 +1,11 @@
 <template>
     <div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto pt-2 pb-2">
+                <h1 v-if="heading != ''" class="display-5">{{ heading | textCapitalize }}</h1>
+                <h1 class="display-5" v-else></h1>
+            </div>
+        </div>
         <div class="row">
             <div class="col-sm-6 col-lg-3">
                 <div class="card text-white bg-gradient-success">
@@ -16,22 +22,22 @@
                 </div>
             </div>
             <div class="col-sm-12 col-lg-6">
-                <div class="card text-white bg-gradient-danger">
+                <div class="card text-white bg-gradient-success">
                     <div class="card-body pb-0 py-1">
                         <div class="row no-gutters">
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item py-1">Number of District covered:
+                                    <li class="list-group-item py-1">District covered:
                                         <span class="font-weight-bold"
                                               v-if="outputRes.districts">{{ outputRes.districts | roundNumber }}</span>
                                         <span class="font-weight-bold" v-else>0</span>
                                     </li>
-                                    <li class="list-group-item py-1">Number of Upazila covered:
+                                    <li class="list-group-item py-1">Upazila covered:
                                         <span class="font-weight-bold"
                                               v-if="outputRes.upazilas">{{ outputRes.upazilas | roundNumber }}</span>
                                         <span class="font-weight-bold" v-else>0</span>
                                     </li>
-                                    <li class="list-group-item py-1">Number of Union covered:
+                                    <li class="list-group-item py-1">Union covered:
                                         <span class="font-weight-bold"
                                               v-if="outputRes.unions">{{ outputRes.unions | roundNumber }}</span>
                                         <span class="font-weight-bold" v-else>0</span>
@@ -40,19 +46,19 @@
                             </div>
                             <div class="col-md-6 col-md-6 col-sm-12">
                                 <ul class="list-group list-group-flush">
-                                    <li class="list-group-item py-1">Number of Village covered:
+                                    <li class="list-group-item py-1">Village covered:
                                         <span class="font-weight-bold"
                                               v-if="outputRes.villages">{{ outputRes.villages | roundNumber }}</span>
                                         <span class="font-weight-bold" v-else>0</span>
                                     </li>
-                                    <li class="list-group-item py-1">Number of Households covered:
+                                    <li class="list-group-item py-1">Households covered:
                                         <span class="font-weight-bold"
                                               v-if="outputRes.households">{{
                                                 outputRes.households | roundNumber
                                             }}</span>
                                         <span class="font-weight-bold" v-else>0</span>
                                     </li>
-                                    <li class="list-group-item py-1">Number of Population covered:
+                                    <li class="list-group-item py-1">Population covered:
                                         <span class="font-weight-bold"
                                               v-if="outputRes.populations">{{
                                                 outputRes.populations | roundNumber
@@ -70,7 +76,7 @@
             <div class="col-sm-6 col-lg-3">
                 <select
                     v-model="formData.projectId"
-                    @change="onSelectProject()"
+                    @change="onSelectProject($event)"
                     class="form-control form-control-sm rounded-0">
                     <option value="">Select One</option>
                     <option value="all">All Projects</option>
@@ -83,7 +89,7 @@
         </div>
         <div class="row">
             <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-gradient-info">
+                <div class="card text-white bg-gradient-warning">
                     <div class="card-body pb-0">
                         <div class="text-value-lg" v-if="outputRes.savings">{{ outputRes.savings | roundNumber }}</div>
                         <div class="text-value-lg" v-else>0</div>
@@ -94,7 +100,7 @@
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-gradient-warning">
+                <div class="card text-white bg-gradient-info">
                     <div class="card-body pb-0">
                         <div class="text-value-lg" v-if="outputRes.profit">{{ outputRes.profit | roundNumber }}</div>
                         <div class="text-value-lg" v-else>0</div>
@@ -105,7 +111,7 @@
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-gradient-success">
+                <div class="card text-white bg-gradient-warning">
                     <div class="card-body pb-0">
                         <div class="text-value-lg" v-if="outputRes.fund_position_automatic">
                             {{ outputRes.fund_position_automatic | roundNumber }}
@@ -120,7 +126,7 @@
         </div>
         <div class="row">
             <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-gradient-warning">
+                <div class="card text-white bg-gradient-info">
                     <div class="card-body pb-0">
                         <div class="text-value-lg" v-if="outputRes.outstanding_amount">{{
                                 outputRes.outstanding_amount | roundNumber
@@ -134,7 +140,7 @@
                 </div>
             </div>
             <div class="col-sm-6 col-lg-3">
-                <div class="card text-white bg-gradient-success">
+                <div class="card text-white bg-gradient-warning">
                     <div class="card-body pb-0">
                         <div class="text-value-lg" v-if="outputRes.amount_in_gro_bank">{{
                                 outputRes.amount_in_gro_bank | roundNumber
@@ -176,12 +182,14 @@ export default {
             formData: {
                 projectId: '',
             },
+            heading: '',
             routes: window.appHelper.routes
         }
     },
     methods: {
-        onSelectProject() {
+        onSelectProject($event) {
             let _this = this;
+            _this.heading = $event.target.selectedOptions[0].label;
             _this.errors = {};
             if (!_this.formData.projectId == '') {
                 axios.post(_this.routes.project, _this.formData)
@@ -211,7 +219,9 @@ export default {
                 .then((res) => {
                     if (res.data) {
                         _this.projects = res.data.projects;
-                        _this.formData.projectId = '';
+                        _this.outputRes = res.data.all;
+                        _this.formData.projectId = 'all';
+                        _this.heading = 'All Projects'
                     } else {
                         toastr.error(res.data.message, "Warning");
                     }

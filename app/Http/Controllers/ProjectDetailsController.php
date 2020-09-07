@@ -14,13 +14,15 @@ class ProjectDetailsController extends Controller
         return view('project-details');
     }
 
-    public function calculateById(Request $request)
+    public function calculateById(Request $request, $call = false)
     {
-        $search = $request->post('projectId');
+        $ids = Project::select('id', 'status')->where('status', '=', 'active')->pluck('id');
 
-        $ids = (array)$search;
-        if ($search == 'all') {
-            $ids = Project::select('id', 'status')->where('status', '=', 'active')->pluck('id');
+        if (!$call) {
+            $search = $request->post('projectId');
+            if ($search != 'all') {
+                $ids = (array)$search;
+            }
         }
 
         $sql = "SUM(gro_fund_transfer) as gro_fund_transfer,SUM(fund_position_automatic) as fund_position_automatic,
@@ -32,92 +34,13 @@ class ProjectDetailsController extends Controller
 
         $details = ProjectDetails::select(DB::raw($sql))->whereIn('project_id', $ids)->first();
 
-        return response()->json($details);
-
-        /*$search = $request->post('projectId');
-
-        if ($search == 'all') {
-            $ids = Project::select('id', 'status')->where('status', '=', 'active')->pluck('id');
-        } else {
-            $ids = (array)$search;
+        if (!$call) {
+            return response()->json($details);
         }
-
-        $sql = "SUM(gro_fund_transfer) as gro_fund_transfer,SUM(fund_position_automatic) as fund_position_automatic,
-            SUM(outstanding_amount) as outstanding_amount,SUM(amount_in_gro_bank) as amount_in_gro_bank,
-            SUM(cash_in_hand) as cash_in_hand,SUM(number_of_districts) as districts,SUM(number_of_upazilas) as upazilas,
-            SUM(number_of_unions) as unions,SUM(number_of_villages) as villages,SUM(number_of_households) as households,
-            SUM(number_of_populations) as populations,SUM(amount_group_saving+amount_group_risk) as savings,
-            ((SUM(amount_group_profit)+SUM(bank_profit)+SUM(other_income))-(SUM(other_income)+SUM(gro_and_other_cost))) as profit";
-
-        $details = ProjectDetails::select(DB::raw($sql))->whereIn('project_id', $ids)->first();
-
-        return response()->json($details);*/
-
-        /*if ($search == 'all') {
-            $ids = Project::select('id', 'status')->where('status', '=', 'active')->pluck('id');
-        } else {
-            $ids = (array)$search;
-        }
-
-        $sql = "SUM(gro_fund_transfer) as gro_fund_transfer,SUM(fund_position_automatic) as fund_position_automatic,
-            SUM(outstanding_amount) as outstanding_amount,SUM(amount_in_gro_bank) as amount_in_gro_bank,
-            SUM(cash_in_hand) as cash_in_hand,SUM(number_of_districts) as districts,SUM(number_of_upazilas) as upazilas,
-            SUM(number_of_unions) as unions,SUM(number_of_villages) as villages,SUM(number_of_households) as households,
-            SUM(number_of_populations) as populations,SUM(amount_group_saving+amount_group_risk) as savings,
-            ((SUM(amount_group_profit)+SUM(bank_profit)+SUM(other_income))-(SUM(other_income)+SUM(gro_and_other_cost))) as profit";
-        $details = ProjectDetails::select(DB::raw($sql))->whereIn('project_id', $ids)->first();
-
-        $data['gro_fund_transfer'] = $details->gro_fund_transfer;
-        $data['fund_position_automatic'] = $details->fund_position_automatic;
-        $data['outstanding_amount'] = $details->outstanding_amount;
-        $data['amount_in_gro_bank'] = $details->amount_in_gro_bank;
-        $data['savings'] = $details->savings;
-        $data['profit'] = $details->profit;
-        $data['cash_in_hand'] = $details->cash_in_hand;
-        $data['districts'] = $details->number_of_districts;
-        $data['upazilas'] = $details->number_of_upazilas;
-        $data['unions'] = $details->number_of_unions;
-        $data['villages'] = $details->number_of_villages;
-        $data['households'] = $details->number_of_households;
-        $data['populations'] = $details->number_of_populations;
-
-        return response()->json($data);*/
-
-        /*if ($search == 'all') {
-
-            $sql = "SUM(gro_fund_transfer) as gro_fund_transfer,SUM(fund_position_automatic) as fund_position_automatic,
-            SUM(outstanding_amount) as outstanding_amount,SUM(amount_in_gro_bank) as amount_in_gro_bank,
-            SUM(cash_in_hand) as cash_in_hand,SUM(number_of_districts) as districts,SUM(number_of_upazilas) as upazilas,
-            SUM(number_of_unions) as unions,SUM(number_of_villages) as villages,SUM(number_of_households) as households,
-            SUM(number_of_populations) as populations,SUM(amount_group_saving+amount_group_risk) as savings,
-            ((SUM(amount_group_profit)+SUM(bank_profit)+SUM(other_income))-(SUM(other_income)+SUM(gro_and_other_cost))) as profit";
-
-            $ids = Project::select('id', 'status')->where('status', '=', 'active')->pluck('id');
-            $details = ProjectDetails::select(DB::raw($sql))->whereIn('project_id', $ids)->first();
-            $data['savings'] = $details->savings;
-            $data['profit'] = $details->profit;
-        } else {
-
-            $details = ProjectDetails::where('project_id', '=', $search)->first();
-            $data['savings'] = $details->amount_group_saving + $details->amount_group_risk;
-            $data['profit'] = ($details->amount_group_profit + $details->bank_profit + $details->other_income) - ($details->bank_charge + $details->gro_and_other_cost);
-        }
-        $data['gro_fund_transfer'] = $details->gro_fund_transfer;
-        $data['fund_position_automatic'] = $details->fund_position_automatic;
-        $data['outstanding_amount'] = $details->outstanding_amount;
-        $data['amount_in_gro_bank'] = $details->amount_in_gro_bank;
-        $data['cash_in_hand'] = $details->cash_in_hand;
-        $data['districts'] = $details->number_of_districts;
-        $data['upazilas'] = $details->number_of_upazilas;
-        $data['unions'] = $details->number_of_unions;
-        $data['villages'] = $details->number_of_villages;
-        $data['households'] = $details->number_of_households;
-        $data['populations'] = $details->number_of_populations;
-
-        return response()->json($data);*/
+        return $details;
     }
 
-    public function getList()
+    public function getList(Request $request)
     {
         $projects = Project::select('id', 'name', 'status')
             ->where('status', '=', 'active')
@@ -132,7 +55,8 @@ class ProjectDetailsController extends Controller
 
         return response()->json([
             'list' => $list,
-            'projects' => $projects
+            'projects' => $projects,
+            'all' => $this->calculateById($request, true)
         ]);
     }
 

@@ -15,7 +15,7 @@
     {{--    <link href="{{ asset("assets/vendors/bootstrap-datepicker/css/bootstrap-datepicker.min.css") }}" rel="stylesheet">--}}
 @endpush
 @section("content")
-    <main class="c-main">
+    <main class="c-main mt-0 pt-0">
         <div class="container-fluid">
             <div class="fade-in">
                 <div id="dashboard">

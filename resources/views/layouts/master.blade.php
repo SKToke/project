@@ -20,8 +20,8 @@
     <link href="{{ asset("assets/font-awesome/font-awesome.min.css") }}" rel="stylesheet">
     <link href="{{ asset("assets/font-awesome/all.min.css") }}" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics-->
-    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
-    @include("layouts.top-script")
+    {{--<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+    @include("layouts.top-script")--}}
     @stack("header")
     @stack("scripts")
 </head>
